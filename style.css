@@ -1,0 +1,198 @@
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 0px 50px grey;
+}
+.container .container_left{
+    border-radius: 15px;
+    background: linear-gradient(180deg, rgb(77, 36, 255) 20%, rgba(50,45,235,1) 100%);
+    padding: 15px 50px 5px 50px;
+}
+
+.container .container_left h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgba(179, 179, 179, 0.61);
+}
+
+.container .container_left .left_mark{
+    text-align: center;
+    min-height: 10%;
+    background: linear-gradient(0deg, rgb(55, 0, 255) 0%, rgba(69,51,235,1) 100%);
+    width: 200px;
+    height: 200px;
+    margin-left: 45px;
+    border-radius: 100px;
+    place-content: center;
+}
+
+.container .container_left .left_mark h3 {
+    font-size: 60px;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.container .container_left .left_mark p{
+    font-size: 15px;
+    color: white;
+    margin-top: 0px;
+    color: rgba(179, 179, 179, 0.61);
+    font-weight: 600;
+}
+
+.container .container_left .left_texts {
+    text-align: center;
+    color: white;
+    width: 240px;
+    margin-left: 25px;
+}
+.container .container_left .left_texts h3{
+    font-size: 28px;
+    margin-bottom: 0px;
+}
+.container .container_left .left_texts p{
+    color: rgba(179, 179, 179, 0.884);
+    font-weight: 600;
+}
+
+.container .container_right {
+    display: grid;
+    grid-template-rows: 70px 290px 50px;
+    border-radius: 15px;
+    padding: 15px 100px 5px 20px;
+}
+
+.container .container_right .header_right h2{
+    color: rgb(37, 37, 60);
+}
+
+.container .container_right .right_bd{
+    display: grid;
+    grid-template-rows: repeat(4, 65px);
+    gap: 5px;
+}
+
+.container .container_right .right_bd .right_reaction{
+    width: 300px;
+    height: 65px;
+    display: grid;
+    grid-template-columns: 30px 170px 90px;
+    background-color: rgba(255, 0, 0, 0.345);
+    border-radius: 10px;
+    place-content: center;
+}
+
+.container .container_right img {
+    margin-top: 21px;
+}
+
+.container .container_right .right_bd p{
+    color: rgba(0, 0, 0, 0.558);
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.container .container_right p span{
+    font-weight: 800;
+    color: rgb(30, 30, 56);
+}
+
+.container .container_right .right_bd .right_reaction h3{
+    color: red;
+}
+.container .container_right .right_bd .right_verbal h3{
+    color: green;
+}
+.container .container_right .right_bd .right_visual h3{
+    color: blueviolet;
+}
+
+.container .container_right .right_bd .right_memory h3{
+    color: orange;
+}
+
+.container .container_right .right_bd .right_memory{
+    width: 300px;
+    height: 65px;
+    display: grid;
+    grid-template-columns: 30px 170px 90px;
+    background-color: rgba(255, 192, 75, 0.392);
+    border-radius: 10px;
+    place-content: center;
+}
+
+.container .container_right .right_bd .right_verbal{
+    width: 300px;
+    height: 65px;
+    display: grid;
+    grid-template-columns: 30px 170px 90px;
+    background-color: rgba(55, 141, 55, 0.344);
+    border-radius: 10px;
+    place-content: center;
+}
+.container .container_right .right_bd .right_visual{
+    width: 300px;
+    height: 65px;
+    display: grid;
+    grid-template-columns: 30px 170px 90px;
+    background-color: rgba(154, 78, 226, 0.325);
+    border-radius: 10px;
+    place-content: center;
+}
+
+.container .container_right .button_continue button{
+    width: 300px;
+    height: 65px;
+    border: 1px;
+    border-radius: 50px;
+    background: linear-gradient(180deg, rgb(77, 36, 255) 20%, rgba(50,45,235,1) 100%);
+}
+
+.container .container_right .button_continue button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 450px){
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 390px;
+    }
+
+    .container_left .left_mark {
+        min-height: 10%;
+        background: linear-gradient(0deg, rgb(55, 0, 255) 0%, rgba(69,51,235,1) 100%);
+        width: 200px;
+        height: 200px;
+        margin-left: 45px;
+        border-radius: 100px;
+        place-content: center;
+    }
+    .container_left .left_texts {
+        margin-top: 40px;
+        width: 300px;
+    }
+    .container_right {
+        height: 500px;
+        margin-left: 20px;
+    }
+}
